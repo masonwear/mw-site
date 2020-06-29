@@ -7,11 +7,6 @@ import Email from '../components/Email'
 
 import { getPosts } from '../pages/api/posts';
 
-IndexPage.getInitialProps = async () => {
-  const posts = await getPosts();
-  return { posts: posts }
-}
-
 const IndexPage = (props) => (
   <ul>
     {props.posts.map(post => (
@@ -19,6 +14,13 @@ const IndexPage = (props) => (
     ))}
   </ul>
 );
+
+IndexPage.getInitialProps = async () => {
+  const posts = await getPosts();
+  return { posts: posts }
+}
+
+
 
 export default function Home() {
   return (

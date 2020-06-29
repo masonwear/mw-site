@@ -25,3 +25,15 @@ export async function getSinglePost(postSlug) {
       console.error(err);
     });
 }
+
+export async function getPortfolio() {
+  return await api.posts
+    .browse({
+      limit: "all",
+      filter: "tag:portfolio"
+
+    })
+    .catch(err => {
+      console.error(err);
+    });
+}
