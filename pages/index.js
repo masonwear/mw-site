@@ -4,25 +4,13 @@ import Header from '../components/Header'
 import Intro from '../components/Intro'
 import Projects from '../components/Projects'
 import Email from '../components/Email'
-
 import { getPosts } from '../pages/api/posts';
-
-const IndexPage = (props) => (
-  <ul>
-    {props.posts.map(post => (
-      <li key={post.id}>{post.title}</li>
-    ))}
-  </ul>
-);
-
-IndexPage.getInitialProps = async () => {
-  const posts = await getPosts();
-  return { posts: posts }
-}
+import Link from 'next/link';
 
 
 
-export default function Home() {
+
+function Home() {
   return (
    
     
@@ -35,8 +23,8 @@ export default function Home() {
     <div className="body">
       <Intro></Intro>
       <Projects></Projects>
+      
     </div>
-    
     </div> 
     
     <div className="email-wrap">
@@ -64,6 +52,9 @@ export default function Home() {
     </style>
           
   </Layout>
+  
           
   )
 }
+
+export default Home
