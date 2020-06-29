@@ -12,58 +12,44 @@ export default function Home() {
   return (
    
     
-    <Layout>
+  <Layout>
     
-    <div className ="home">
+    <div className="home">
     
     <div className="header"><Header></Header></div>
-    <div className="body"><Intro></Intro>
-    <Projects></Projects></div>
-    <div className="email"><Email></Email></div>
     
-  
+    <div className="body">
+      <Intro></Intro>
+      <Projects></Projects>
+    </div>
     
+    </div> 
+    
+    <div className="email-wrap">
+      <Email></Email>
+    </div>
 
+    <style jsx>
+      {`
+        .home {
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        
+        .body {
+          margin-bottom: 85px;
+        }
+        
+        .email-wrap {
+          width: 100%;
+          background: #ffffff;
+          padding: 60px 0;
+        }
+
+      `}
+    </style>
           
-            
-            
-            <style jsx>{`
-            
-            .home {
-              display: grid;
-              grid-template-columns: 0.7fr 1.5fr 1.2fr 0.6fr;
-              grid-template-rows: 0.2fr 2.7fr 0.1fr;
-              gap: 1px 1px;
-              grid-template-areas: ". header header ." ". body body ." ". email email .";
-              
-            }  
-            
-            .header{
-              grid-area: header;
-
-            }
-
-            .body{
-              grid-area: body;
-            }
-
-            .email{
-
-              grid-area: email;
-            }
-
-
-
-
-          `}
-
-            </style>
-
-
+  </Layout>
           
-            </div> 
-          </Layout>
-          
-          
-          )
-          }
+  )
+}

@@ -1,38 +1,43 @@
 function Header(props) {
     return (
+      
         <div className="header">
     
-        <div className="logo">
+          <div className="logo">
             <img src="/MasonLogo.svg"></img>
-            {/* <style jsx>{`
-            .logo {
-            position: absolute;
-            left: 26%;
-            right: 69.65%;
-            top: 5.62%;
-            bottom: 91.17%;} 
-            `}
-            
-            </style> */}
             </div>
     
             <div className="mode">
-              <img src="/Dark Mode.svg"></img>
-              {/* <style jsx>{`
-              .mode {
-                position: absolute;
-                width: 36px;
-                height: 36px;
-                left: 613px;
-                top: 84px;
+              <img src="/moon.svg"></img>
+            </div>
+            
+            <style jsx>
+              {`
+                .header {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 80px;
+                  margin-bottom: 65px;
+                }
+                
+                .mode {
+                  background: #ffffff;
+                  width: 35px;
+                  height: 35px;
+                  text-align: center;
+                  line-height: 38px;
+                  border-radius: 50%;
+                  box-shadow: 0px 0px 14px #C1B6AE;
+                  cursor: pointer;
+                  margin-top: 6px;
+                }
+                
+    
               `}
-              
-              </style> */}
-              </div>
-              
+            </style>
     
-    
-              </div>
+        </div>
+        
     )
   }
   

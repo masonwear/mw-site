@@ -4,16 +4,13 @@ function Layout(props) {
         {props.children}
         <style jsx global>{`
           
-          
-          
           body {
-            
             background-color: #F4F0ED;
-           
+            padding: 0;
+            margin: 0;
           }
+          
           h1 {
-            
-
             font-family: ITC Souvenir Std;
             font-style: normal;
             font-weight: 500;
@@ -24,6 +21,7 @@ function Layout(props) {
             color: #0F171B;
             opacity: 0.8;
           }
+          
           h2 {
             font-family: ITC Souvenir Std;
             font-style: normal;
@@ -38,7 +36,6 @@ function Layout(props) {
 
           }
 
-
           p {
             font-family: DM Sans;
             font-style: normal;
@@ -47,8 +44,7 @@ function Layout(props) {
             line-height: 192.7%;
             color: #0F171B;
             opacity: 0.8;
-            
-            
+            margin-bottom: 30px;
           }
 
           a {
