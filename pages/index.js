@@ -5,10 +5,9 @@ import Intro from '../components/Intro'
 import Projects from '../components/Projects'
 import Email from '../components/Email'
 
-import { getPosts } from '../api/posts';
+import { getPosts } from '../pages/api/posts';
 
-
-/*IndexPage.getInitialProps = async () => {
+IndexPage.getInitialProps = async () => {
   const posts = await getPosts();
   return { posts: posts }
 }
@@ -19,7 +18,7 @@ const IndexPage = (props) => (
       <li key={post.id}>{post.title}</li>
     ))}
   </ul>
-);*/
+);
 
 export default function Home() {
   return (
@@ -34,7 +33,6 @@ export default function Home() {
     <div className="body">
       <Intro></Intro>
       <Projects></Projects>
-      <IndexPage></IndexPage>
     </div>
     
     </div> 
