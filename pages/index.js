@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Intro from '../components/Intro'
 import Projects from '../components/Projects'
 import Email from '../components/Email'
+import IndexPage from '../components/IndexPage'
 
 import {getPosts} from '../pages/api/posts'
 
@@ -21,6 +22,8 @@ export default function Home() {
     <div className="body">
       <Intro></Intro>
       <Projects></Projects>
+      <IndexPage></IndexPage>
+
     </div>
     
     </div> 
