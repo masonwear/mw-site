@@ -43,6 +43,23 @@ function Layout(props) {
 
           }
 
+          h3 {
+
+            font-family: ITC Souvenir Std;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+            letter-spacing: -0.4px;
+
+            color: #0F171B;
+
+            opacity: 0.8;
+
+
+
+          }
+
           p {
             font-family: DM Sans;
             font-style: normal;
@@ -79,6 +96,12 @@ function Layout(props) {
           li {
             color: #0F171B;
           }
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        
 
 
         `}</style>

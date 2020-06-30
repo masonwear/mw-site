@@ -9,9 +9,11 @@ const PostPage = (props) => {
   // Render post title and content in the page from props
   return (
       <Layout>
+      
      
     
     <div className = "post">
+    <Header></Header>
       <h1>{props.post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
     </div>
@@ -23,6 +25,8 @@ const PostPage = (props) => {
         max-width: 500px;
         margin: 0 auto;
       }
+
+      
     
     
     

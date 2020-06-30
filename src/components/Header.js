@@ -1,15 +1,21 @@
+import Link from "next/link"
+import react from 'react'
+
 function Header(props) {
     return (
       
         <div className="header">
     
-          <div className="logo">
-            <img src="/MasonLogo.svg"></img>
-            </div>
+          
+            <Link href="/">
+            <img src="/MasonLogo.svg"/>
+            </Link>
+            
+            
     
-            <div className="mode">
+            {/* <div className="mode">
               <img src="/moon.svg"></img>
-            </div>
+            </div> */}
             
             <style jsx>
               {`
@@ -18,6 +24,7 @@ function Header(props) {
                   justify-content: space-between;
                   margin-top: 80px;
                   margin-bottom: 65px;
+                  
                 }
                 
                 .mode {
@@ -30,6 +37,10 @@ function Header(props) {
                   box-shadow: 0px 0px 14px #C1B6AE;
                   cursor: pointer;
                   margin-top: 6px;
+                }
+
+                img {
+                  cursor: pointer;
                 }
                 
     
