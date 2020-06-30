@@ -14,16 +14,13 @@ function Projects(props) {
 
  </ul>
 
-{/* <style jsx>{`
-            .projects {
-              position: absolute;
-              height: 14px;
-              left: 26%;
-              right: 32%;
-              top: calc(50% - 14px/2 - 184.5px);
+ <style jsx>{`
+            a {
+              text-decoration: none;
+            }
             `}
             
-            </style> */}
+            </style> 
 
               
        

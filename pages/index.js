@@ -6,6 +6,7 @@ import Projects from '../components/Projects'
 import Email from '../components/Email'
 import { getPosts } from '../pages/api/posts';
 import Link from 'next/link';
+import Social from '../components/Social'
 
 
 const IndexPage = (props) => (
@@ -34,15 +35,18 @@ const IndexPage = (props) => (
           </div>
           
         </li>
-       
+        
       ))}
        
     </ul>
     
     <div className="see-all">
       <Link href="/posts" className="see-all-link">See All</Link> &rarr;
+      
+    
     </div>
     
+   
       
     </div>
     </div> 
@@ -65,6 +69,7 @@ const IndexPage = (props) => (
         .see-all {
           margin-top: 10px;
           font-size: 14px;
+        
         }
         
         .email-wrap {
@@ -73,6 +78,14 @@ const IndexPage = (props) => (
           padding: 60px 0;
           
         }
+
+        .exerpt {
+
+         
+
+        }
+
+       
 
       `}
     </style>

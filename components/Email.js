@@ -18,6 +18,7 @@ function Email(props) {
         .email {
           max-width: 800px;
           margin: 0 auto;
+          margin-left: 225px;
         }
         
         input[type=email] {
@@ -41,6 +42,19 @@ function Email(props) {
           border: 0;
           width: 115px;
           height: 46px
+        }
+
+        p {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 192.7%;
+          
+          /* or 27px */
+          
+          color: #ABA6A2;
+
         }
         
         `}

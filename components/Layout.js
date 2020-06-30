@@ -49,6 +49,8 @@ function Layout(props) {
 
           a {
             color: #EA7884;
+            text-decoration: none;
+            
           }
 
           ul {
