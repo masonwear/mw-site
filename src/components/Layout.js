@@ -1,5 +1,12 @@
+import Head from 'next/head';
+import { Helmet } from 'react-helmet';
+
 function Layout(props) {
     return (
+      
+     
+      
+      
       <div className="page-layout">
         {props.children}
         <style jsx global>{`
@@ -26,7 +33,7 @@ function Layout(props) {
             font-family: ITC Souvenir Std;
             font-style: normal;
             font-weight: 500;
-            font-size: 17px;
+            font-size: 18px;
             line-height: 20px;
             letter-spacing: -0.4px;
 
@@ -73,12 +80,16 @@ function Layout(props) {
             color: #0F171B;
           }
 
-      
-
 
         `}</style>
+
+        <Helmet>
+        <title>Mason Wear - Maker of Things</title>
+        <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+        </Helmet>
       </div>
     )
+    
   }
   
   export default Layout

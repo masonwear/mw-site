@@ -56,6 +56,10 @@ function Email(props) {
           color: #ABA6A2;
 
         }
+
+        placeholder {
+         color: #3F4549
+        }
         
         `}
         

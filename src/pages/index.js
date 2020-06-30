@@ -13,6 +13,7 @@ const IndexPage = (props) => (
    
     
   <Layout>
+
     
     <div className="home">
     
