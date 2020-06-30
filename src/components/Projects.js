@@ -1,14 +1,11 @@
-import Link from 'next/link'
-
 function Projects(props) {
     return (
         <div className="projects">
  <h2>My Projects</h2>
  <ul>
-<li><Link href="/advisorstory">AdvisorStory</Link> &rarr;</li>
-<li><Link href="/starwarsloot">Star Wars Loot</Link> &rarr;</li>
-<li><Link href="/primer">Primer Co</Link> &rarr;</li>
-<li><Link href="/hyperion">Hyperion Trading Co</Link> &rarr;</li>
+<li><a href="https://byprimer.co/" target="_blank">Primer Co</a> &rarr;</li>
+<li><a href="https://getadvisorstory.com/" target="_blank">AdvisorStory</a> &rarr;</li>
+<li><a href="https://starwarsloot.com/" target="_blank">Star Wars Loot</a> &rarr;</li>
 
 
 

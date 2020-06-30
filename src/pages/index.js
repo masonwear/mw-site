@@ -80,11 +80,7 @@ const IndexPage = (props) => (
           
         }
 
-        .exerpt {
-
-         
-
-        }
+       
 
        
 

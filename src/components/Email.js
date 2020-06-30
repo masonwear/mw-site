@@ -4,7 +4,7 @@ function Email(props) {
       <div className="email">
  
         <h1>Let's stay in touch</h1>
-        <p>I won't spam you ever, pinky promise.</p>
+        <p>If you want to stay up to date on new posts, add your email below.</p>
 
 
         <form action="https://MasonWear.us9.list-manage.com/subscribe/post" method="POST"/>
@@ -25,7 +25,7 @@ function Email(props) {
           background: #F4F0ED;
           border-radius: 6px;
           border: 0;
-          padding: 14px 50px 14px 20px;
+          padding: 14px 20px 14px 20px;
         }
         
         input[type=button], input[type=submit], input[type=reset] {
@@ -55,10 +55,6 @@ function Email(props) {
           
           color: #ABA6A2;
 
-        }
-
-        placeholder {
-         color: #3F4549
         }
         
         `}
