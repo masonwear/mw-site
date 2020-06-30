@@ -24,8 +24,7 @@ function Email(props) {
           background: #F4F0ED;
           border-radius: 6px;
           border: 0;
-          width: 404px;
-          height: 46px;
+          padding: 14px 50px 14px 20px;
         }
         
         input[type=button], input[type=submit], input[type=reset] {

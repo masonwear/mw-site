@@ -8,8 +8,6 @@ import { getPosts } from '../pages/api/posts';
 import Link from 'next/link';
 
 
-
-
 const IndexPage = (props) => (
    
     
@@ -31,16 +29,20 @@ const IndexPage = (props) => (
             <a>{post.title}</a>
           </Link>
           
+          <div className="exerpt">
+            {post.custom_excerpt}
+          </div>
+          
         </li>
        
       ))}
        
-       
-       <Link href="/posts">See All</Link> &rarr;
     </ul>
-
     
-      
+    <div className="see-all">
+      <Link href="/posts" className="see-all-link">See All</Link> &rarr;
+    </div>
+    
       
     </div>
     </div> 
@@ -60,6 +62,11 @@ const IndexPage = (props) => (
           margin-bottom: 85px;
         }
         
+        .see-all {
+          margin-top: 10px;
+          font-size: 14px;
+        }
+        
         .email-wrap {
           width: 100%;
           background: #ffffff;
@@ -77,10 +84,8 @@ const IndexPage = (props) => (
 
   IndexPage.getInitialProps = async () => {
     const posts = await getPosts();
-    return { posts: posts}
-    
-  
-    }
+    return { posts: posts }
+  }
   
 
 
