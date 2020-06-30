@@ -1,5 +1,5 @@
 // Import getSinglePost function
-import { getSinglePost } from '../pages/api/posts';
+import { getSinglePost } from './api/posts';
 import Layout from '../components/Layout'
 import Header from '../components/Header'
 

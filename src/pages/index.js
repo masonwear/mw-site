@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Intro from '../components/Intro'
 import Projects from '../components/Projects'
 import Email from '../components/Email'
-import { getPosts } from '../pages/api/posts';
+import { getPosts } from './api/posts';
 import Link from 'next/link';
 import Social from '../components/Social'
 

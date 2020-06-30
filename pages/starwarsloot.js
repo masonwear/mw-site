@@ -1,1 +1,0 @@
-<h1>Star Wars Loot</h1>

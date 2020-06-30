@@ -8,7 +8,7 @@ function Email(props) {
 
 
         <form action="https://MasonWear.us9.list-manage.com/subscribe/post" method="POST"/>
-          <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Email Address"/>
+          <input type="email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Email Address"/>
           <input type="hidden" name="u" value="001b163a1a37d1a984f6cb864"/>
           <input type="hidden" name="id" value="63ed89f667"/>
           <input type="submit" value="Submit"/>
