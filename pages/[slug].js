@@ -9,13 +9,31 @@ const PostPage = (props) => {
   // Render post title and content in the page from props
   return (
       <Layout>
-        
+     
     
-    <div>
+    <div className = "post">
       <h1>{props.post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
     </div>
-  
+
+    <style jsx> {`
+    
+      .post {
+
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    
+    
+    
+    
+    `}
+
+
+
+
+    </style>
+   
     </Layout>
     
   )
