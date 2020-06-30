@@ -29,13 +29,17 @@ const IndexPage = (props) => (
         <li key={post.id}>
           <Link href={`/[slug]`} as={`/${post.slug}`}>
             <a>{post.title}</a>
-            
-            
           </Link>
+          
         </li>
+       
       ))}
+       
+       
+       <Link href="/posts">See All</Link> &rarr;
     </ul>
 
+    
       
       
     </div>
@@ -60,6 +64,7 @@ const IndexPage = (props) => (
           width: 100%;
           background: #ffffff;
           padding: 60px 0;
+          
         }
 
       `}
