@@ -16,9 +16,9 @@ function Email(props) {
         <style jsx>{`
                     
         .email {
-          max-width: 800px;
+          max-width: 500px;
           margin: 0 auto;
-          margin-left: 225px;
+          margin-left: 260px;
         }
         
         input[type=email] {

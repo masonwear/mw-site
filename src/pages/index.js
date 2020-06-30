@@ -22,6 +22,7 @@ const IndexPage = (props) => (
     <div className="body">
       <Intro></Intro>
       <Projects></Projects>
+      
       <br></br>
       <h2>Writing & Blog</h2>
       <ul>
