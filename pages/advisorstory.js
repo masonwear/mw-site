@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import Header from '../components/Header'
-import { getPosts } from '../pages/api/posts';
+import { getPosts, getPortfolio, getAllPosts } from '../pages/api/posts';
 import Link from 'next/link';
 
 
@@ -22,7 +22,7 @@ const IndexPage = (props) => (
 
 
 IndexPage.getInitialProps = async () => {
-    const posts = await getPosts();
+    const posts = await getAllPosts();
     return { posts: posts }
   }
 

@@ -9,7 +9,8 @@ const api = new GhostContentAPI({
 export async function getPosts() {
   return await api.posts
     .browse({
-      limit: "all"
+      limit: "3",
+      filter: "tag:-Projects"
     })
     .catch(err => {
       console.error(err);
@@ -30,8 +31,19 @@ export async function getPortfolio() {
   return await api.posts
     .browse({
       limit: "all",
-      filter: "tag:portfolio"
+      filter: "tag:Projects"
 
+    })
+    .catch(err => {
+      console.error(err);
+    });
+}
+
+export async function getAllPosts() {
+  return await api.posts
+    .browse({
+      limit: "all"
+     
     })
     .catch(err => {
       console.error(err);

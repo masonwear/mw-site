@@ -9,14 +9,15 @@ const PostPage = (props) => {
   // Render post title and content in the page from props
   return (
       <Layout>
+        
     
     <div>
       <h1>{props.post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
     </div>
-   
+  
     </Layout>
-   
+    
   )
 }
 

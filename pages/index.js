@@ -10,8 +10,7 @@ import Link from 'next/link';
 
 
 
-function Home() {
-  return (
+const IndexPage = (props) => (
    
     
   <Layout>
@@ -23,6 +22,21 @@ function Home() {
     <div className="body">
       <Intro></Intro>
       <Projects></Projects>
+      <br></br>
+      <h2>Writing & Blog</h2>
+      <ul>
+      {props.posts.map(post => ( 
+        <li key={post.id}>
+          <Link href={`/[slug]`} as={`/${post.slug}`}>
+            <a>{post.title}</a>
+            
+            
+          </Link>
+        </li>
+      ))}
+    </ul>
+
+      
       
     </div>
     </div> 
@@ -53,8 +67,17 @@ function Home() {
           
   </Layout>
   
-          
-  )
-}
+  
+  );
 
-export default Home
+  IndexPage.getInitialProps = async () => {
+    const posts = await getPosts();
+    return { posts: posts}
+    
+  
+    }
+  
+
+
+
+export default IndexPage
