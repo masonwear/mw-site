@@ -2,6 +2,7 @@ import App, { Container } from 'next/app';
 import React from 'react';
 import { DefaultSeo } from 'next-seo';
 import Fathom from '../components/Fathom'
+import { Helmet } from "react-helmet"
 
 export default class MyApp extends App {
   render() {
@@ -36,12 +37,12 @@ export default class MyApp extends App {
          
         <Component {...pageProps} />
       
-        <head>
+        <Helmet>
           <title>Mason Wear</title>
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet" />
-          </head>
+          </Helmet>
          
       
       </Container>
