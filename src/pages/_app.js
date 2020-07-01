@@ -12,7 +12,6 @@ export default class MyApp extends App {
       
       <Container>
           
-       
            
         <DefaultSeo
           openGraph={{
@@ -36,13 +35,13 @@ export default class MyApp extends App {
         />
          
         <Component {...pageProps} />
-     
-        
+      
+        <head>
           <title>Mason Wear</title>
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet" />
-          
+          </head>
          
       
       </Container>
@@ -53,4 +52,3 @@ export default class MyApp extends App {
   }
 }
 
-<Fathom></Fathom>
