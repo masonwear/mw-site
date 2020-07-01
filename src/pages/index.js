@@ -28,11 +28,15 @@ const IndexPage = (props) => (
       <ul>
       {props.posts.map(post => ( 
         <li key={post.id}>
+          <br></br>
           <Link href={`/[slug]`} as={`/${post.slug}`}>
+            
             <a>{post.title}</a>
+          
           </Link>
           
           <div className="exerpt">
+            <br></br>
             {post.custom_excerpt}
           </div>
           
@@ -43,6 +47,7 @@ const IndexPage = (props) => (
     </ul>
     
     <div className="see-all">
+      <br></br>
       <Link href="/posts" className="see-all-link">See All</Link> &rarr;
       
     

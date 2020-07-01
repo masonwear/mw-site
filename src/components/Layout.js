@@ -1,11 +1,7 @@
-import Head from 'next/head';
 import { Helmet } from 'react-helmet';
 
 function Layout(props) {
-    return (
-      
-     
-      
+    return ( 
       
       <div className="page-layout">
         {props.children}
@@ -26,7 +22,7 @@ function Layout(props) {
             letter-spacing: -0.4px;
 
             color: #0F171B;
-            opacity: 0.8;
+            ;
           }
           
           h2 {
@@ -39,7 +35,7 @@ function Layout(props) {
 
             color: #0F171B;
 
-            opacity: 0.8;
+            
 
           }
 
@@ -54,7 +50,7 @@ function Layout(props) {
 
             color: #0F171B;
 
-            opacity: 0.8;
+            
 
 
 
@@ -65,9 +61,8 @@ function Layout(props) {
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
-            line-height: 192.7%;
+            line-height: 1.4;
             color: #0F171B;
-            opacity: 0.8;
             margin-bottom: 30px;
           }
 
@@ -82,9 +77,9 @@ function Layout(props) {
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
-            line-height: 192.7%;
+            line-height: 1.4;
             color: #0F171B;
-            opacity: 0.8;
+            
             list-style-type: none;
         list-style-position:inside;
         margin:0;
