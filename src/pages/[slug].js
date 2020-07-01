@@ -2,6 +2,7 @@
 import { getSinglePost } from './api/posts';
 import Layout from '../components/Layout'
 import Header from '../components/Header'
+import Email from '../components/Email'
 
 
 // PostPage page component
@@ -9,28 +10,33 @@ const PostPage = (props) => {
   // Render post title and content in the page from props
   return (
       <Layout>
-      
-     
     
-    <div className = "post">
-    <Header></Header>
+    
+    <div className="head-wrap">
+      <Header></Header>
+    </div>
+    
+    <div className="single-post">
+    
       <h1>{props.post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
+      <div dangerouslySetInnerHTML={{ __html: props.post.html }} /></div>
+    
+    <div className="email-wrap">
+      <Email></Email>
     </div>
 
     <style jsx> {`
     
-      .post {
-
+      .single-post {
         max-width: 500px;
         margin: 0 auto;
       }
-
       
-    
-    
-    
-    
+      .head-wrap {
+        max-width: 500px;
+        margin: 0 auto;  
+      }
+
     `}
 
 

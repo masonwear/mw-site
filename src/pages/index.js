@@ -17,7 +17,7 @@ const IndexPage = (props) => (
     
     <div className="home">
     
-    <div className="header"><Header></Header></div>
+    <Header></Header>
     
     <div className="body">
       <Intro></Intro>
@@ -25,18 +25,15 @@ const IndexPage = (props) => (
       
       <br></br>
       <h2>Writing & Blog:</h2>
-      <ul>
+      
+      <ul className="blog-posts">
       {props.posts.map(post => ( 
         <li key={post.id}>
-          <br></br>
           <Link href={`/[slug]`} as={`/${post.slug}`}>
-            
             <a>{post.title}</a>
-          
           </Link>
           
-          <div className="exerpt">
-            <br></br>
+          <div className="excerpt">
             {post.custom_excerpt}
           </div>
           
@@ -78,16 +75,6 @@ const IndexPage = (props) => (
           font-size: 14px;
         
         }
-        
-        .email-wrap {
-          width: 100%;
-          background: #ffffff;
-          padding: 60px 0;
-          
-        }
-
-       
-
        
 
       `}

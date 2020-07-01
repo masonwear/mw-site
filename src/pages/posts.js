@@ -5,26 +5,25 @@ import { getPosts, getPortfolio, getAllPosts } from './api/posts';
 import Link from 'next/link';
 
 
-
-
 const PostsPage = (props) => (
 
   <Layout>
+  
+   <div className="head-wrap">
+    <Header></Header>
+   </div>
     
-
    <div className="posts">
-   <Header></Header>
+   
    <h1>Writing & Blog</h1>
     <ul>
       {props.posts.map(post => ( 
         <li key={post.id}>
           <Link href={`/[slug]`} as={`/${post.slug}`}>
             <a>{post.title}</a>
-            
-            
           </Link>
 
-          <div className="exerpt">
+          <div className="excerpt">
             {post.custom_excerpt}
           </div>
         </li>
@@ -44,29 +43,21 @@ const PostsPage = (props) => (
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
-      line-height: 65px;
       letter-spacing: -0.4px;
-      
       color: #EA7884;;
-      
       opacity: 0.8;
-
-
-
+    }
+    
+    .head-wrap {
+      max-width: 500px;
+      margin: 0 auto;  
     }
 
     .posts {
       max-width: 500px;
-        margin: 0 auto;
-        margin-bottom: 85px;
-         }
-
-         .email-wrap {
-          width: 100%;
-          background: #ffffff;
-          padding: 60px 0;
-          
-        }
+      margin: 0 auto;
+      margin-bottom: 85px;
+    }
         
     
     
