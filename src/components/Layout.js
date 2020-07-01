@@ -175,8 +175,7 @@ function Layout(props) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <meta property="og:title" content="Mason Wear - Maker of Things"/>
           <meta property="og:description" content="I'm a serial maker of things on the internet based out of Austin, TX. I thrive off of launching new projects on the web and experimenting on products."/>
-          <meta property="og:image" content="public/Page 1.png"/>
-          <meta property="og:url" content="/this-page.html"/>
+          <meta property="og:image" content="/static/MasonLogo.png"/>
           <meta property="og:site_name" content="Mason Wear - Maker of Things"/>
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:image:alt" content="My fancy logo."/>
