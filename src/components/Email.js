@@ -92,7 +92,7 @@ function Email(props) {
           border: 0;
           cursor: pointer;
           padding: 12px 25px;
-          -webkite-appearance: none;
+          -webkit-appearance: none;
           
           -webkit-transition: all 0.2s ease;/* Safari 3.2+, Chrome */
           -moz-transition: all 0.2s ease;/* Firefox 4-15 */
