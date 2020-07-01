@@ -1,5 +1,6 @@
 import Layout from '../components/Layout'
 import Header from '../components/Header'
+import Email from '../components/Email'
 import { getPosts, getPortfolio, getAllPosts } from './api/posts';
 import Link from 'next/link';
 
@@ -10,7 +11,7 @@ const PostsPage = (props) => (
 
   <Layout>
     
-  
+
    <div className="posts">
    <Header></Header>
    <h1>Writing & Blog</h1>
@@ -29,6 +30,9 @@ const PostsPage = (props) => (
         </li>
       ))}
     </ul>
+    </div>
+    <div className="email-wrap">
+      <Email></Email>
     </div>
    <style jsx> {`
     
@@ -54,9 +58,15 @@ const PostsPage = (props) => (
     .posts {
       max-width: 500px;
         margin: 0 auto;
+        margin-bottom: 85px;
          }
 
-
+         .email-wrap {
+          width: 100%;
+          background: #ffffff;
+          padding: 60px 0;
+          
+        }
         
     
     
