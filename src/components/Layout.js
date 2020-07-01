@@ -1,5 +1,3 @@
-import { Helmet } from 'react-helmet';
-
 function Layout(props) {
     return ( 
       
@@ -163,24 +161,6 @@ function Layout(props) {
           }
 
         `}</style>
-
-        <Helmet>
-          <title>Mason Wear - Maker of Things</title>
-          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
-          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet" />
-          
-          <meta name="HandheldFriendly" content="True"/>
-          <meta name="MobileOptimized" content="320"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-          <meta property="og:title" content="Mason Wear - Maker of Things"/>
-          <meta property="og:description" content="I'm a serial maker of things on the internet based out of Austin, TX. I thrive off of launching new projects on the web and experimenting on products."/>
-          <meta property="og:image" content="/static/MasonLogo.png"/>
-          <meta property="og:site_name" content="Mason Wear - Maker of Things"/>
-          <meta name="twitter:card" content="summary_large_image"/>
-          <meta name="twitter:image:alt" content="My fancy logo."/>
-          
-        </Helmet>
       </div>
     )
     
