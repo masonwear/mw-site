@@ -24,7 +24,7 @@ const IndexPage = (props) => (
       <Projects></Projects>
       
       <br></br>
-      <h2>Writing & Blog</h2>
+      <h2>Writing & Blog:</h2>
       <ul>
       {props.posts.map(post => ( 
         <li key={post.id}>

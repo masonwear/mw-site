@@ -1,7 +1,8 @@
 function Projects(props) {
     return (
         <div className="projects">
- <h2>My Projects</h2>
+ <h2>My Projects:</h2>
+ 
  <ul>
 <li><a href="https://byprimer.co/" target="_blank">Primer Co</a> &rarr;</li>
 <li><a href="https://getadvisorstory.com/" target="_blank">AdvisorStory</a> &rarr;</li>

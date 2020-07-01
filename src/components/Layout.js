@@ -17,9 +17,10 @@ function Layout(props) {
             font-family: ITC Souvenir Std;
             font-style: normal;
             font-weight: 500;
-            font-size: 25.16px;
+            font-size: 26.16px;
             line-height: 30px;
             letter-spacing: -0.4px;
+            opacity: 0.95;
 
             color: #0F171B;
             ;
@@ -29,9 +30,10 @@ function Layout(props) {
             font-family: ITC Souvenir Std;
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 19px;
             line-height: 20px;
             letter-spacing: -0.4px;
+            opacity: 0.95;
 
             color: #0F171B;
 
@@ -60,10 +62,11 @@ function Layout(props) {
             font-family: DM Sans;
             font-style: normal;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 1.4;
             color: #0F171B;
             margin-bottom: 30px;
+            opacity: 0.95;
           }
 
           a {
@@ -76,7 +79,7 @@ function Layout(props) {
             font-family: DM Sans;
             font-style: normal;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 1.4;
             color: #0F171B;
             

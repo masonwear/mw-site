@@ -16,7 +16,7 @@ function Email(props) {
         <style jsx>{`
                     
         .email {
-          max-width: 500px;
+          max-width: 800px;
           margin: 0 auto;
           margin-left: 260px;
         }
@@ -32,8 +32,8 @@ function Email(props) {
           font-family: DM Sans;
           font-style: normal;
           font-weight: 500;
-          font-size: 14px;
-          line-height: 18px;
+          font-size: 15px;
+          line-height: 1.4;
           text-align: center;
           background: #EA7884;
           color: #F4F0ED;
@@ -48,8 +48,8 @@ function Email(props) {
           font-family: DM Sans;
           font-style: normal;
           font-weight: 500;
-          font-size: 14px;
-          line-height: 192.7%;
+          font-size: 15px;
+          line-height: 1.4;
           
           /* or 27px */
           
