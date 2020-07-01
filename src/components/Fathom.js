@@ -1,18 +1,25 @@
+import React, { useEffect } from 'react';
+import Router from 'next/router';
+import * as Fathom from 'fathom-client';
 
-import * as React from 'react'
+// Record a pageview when route changes
+Router.events.on('routeChangeComplete', () => {
+  Fathom.trackPageview();
+});
 
-export default function Fathom() {
-  React.useEffect(() => {
-    const tracker = window.document.createElement('script')
-    const firstScript = window.document.getElementsByTagName('script')[0]
-    tracker.defer = true
-    tracker.setAttribute('site', process.env.FATHOM_SITE_ID)
-    tracker.setAttribute('spa', 'auto')
-    tracker.setAttribute('excluded-domains', 'localhost,now.sh')
-    tracker.setAttribute('included-domains', 'masonwear.co')
-    tracker.src = process.env.FATHOM_CUSTOM_URL
-    firstScript.parentNode.insertBefore(tracker, firstScript)
-  }, [])
+function App({ Component, pageProps }) {
+  // Initialize Fathom when the app loads
+  useEffect(() => {
+    Fathom.load( process.env.FATHOM_SITE_ID, {
+      includedDomains: [process.env.FATHOM_CUSTOM_URL]
+    });
+  }, []);
 
-  return null
+  return <Component {...pageProps} />;
 }
+
+export default Fathom;
+
+
+
+
