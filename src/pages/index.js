@@ -23,7 +23,7 @@ const IndexPage = (props) => (
       <Intro></Intro>
       <Projects></Projects>
       
-      <br></br>
+      
       <h2>Writing & Blog:</h2>
       
       <ul className="blog-posts">
@@ -40,15 +40,14 @@ const IndexPage = (props) => (
         </li>
         
       ))}
-       
-    </ul>
-    
-    <div className="see-all">
-      <br></br>
+      <div className="see-all">
       <Link href="/posts" className="see-all-link">See All</Link> &rarr;
       
     
-    </div>
+    </div> 
+    </ul>
+    
+    
     
    
       
@@ -71,8 +70,8 @@ const IndexPage = (props) => (
         }
         
         .see-all {
-          margin-top: 10px;
-          font-size: 14px;
+          margin-top: 20px;
+        
         
         }
        

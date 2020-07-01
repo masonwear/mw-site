@@ -16,6 +16,15 @@ function Projects(props) {
             a {
               text-decoration: none;
             }
+
+            .projects {
+              display: block;
+              margin-bottom: 30px
+              
+
+            }
+
+
             `}
             
             </style> 

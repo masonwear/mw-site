@@ -70,6 +70,7 @@ function Layout(props) {
             color: #EA7884;
             text-decoration: none;
             
+            
           }
 
           ul {
@@ -92,12 +93,12 @@ function Layout(props) {
           }
           
           .blog-posts li a {
-            margin-bottom: 10px;
             display: block; 
           }
           
           .excerpt {
-            margin-bottom: 30px; 
+            margin-bottom: 10px;
+            display: block; 
           }
 
           img {
@@ -156,6 +157,8 @@ function Layout(props) {
               box-sizing: border-box;
               margin-right: 0;
             }
+
+            
             
           }
 
