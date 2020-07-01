@@ -51,6 +51,7 @@ function Email(props) {
           -moz-transition: all 0.2s ease;/* Firefox 4-15 */
           -o-transition: all 0.2s ease;/* Opera 10.5-12.00 */
           transition: all 0.2s ease;/* Firefox 16+, Opera 12.50+ */
+          -webkit-appearance: none;
         }
         
         input[type="email"]:focus {
