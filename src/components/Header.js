@@ -1,5 +1,7 @@
 import Link from "next/link"
 import react from 'react'
+import { DarkToggle } from '../components/DarkModeProvider'
+
 
 function Header(props) {
     return (
@@ -13,9 +15,9 @@ function Header(props) {
             
             
     
-            {/* <div className="mode">
-              <img src="/moon.svg"></img>
-            </div> */}
+             <div className="mode">
+              <DarkToggle/>
+            </div>
             
             <style jsx>
               {`

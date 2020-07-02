@@ -4,6 +4,7 @@ import { DefaultSeo } from 'next-seo';
 import FathomHandler from '../components/Fathom'
 import { Helmet } from "react-helmet"
 import  Head  from 'next/head'
+import { ThemeProvider } from '../components/DarkModeProvider'
 
 export default class MyApp extends App {
   render() {
@@ -36,12 +37,13 @@ export default class MyApp extends App {
             cardType: 'summary_large_image',
           }}
         />
-         
+        <ThemeProvider>
         <Component {...pageProps} />
+        </ThemeProvider> 
       
         <Head>
           <title>Mason Wear</title>
-          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+          <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet" />
           </Head>

@@ -11,7 +11,7 @@ function Layout(props) {
           }
           
           body {
-            background-color: #F4F0ED;
+            background-color: var(--color-background);
             padding: 0;
             margin: 0;
             margin-bottom: 330px;
@@ -33,7 +33,7 @@ function Layout(props) {
             font-size: 26.16px;
             line-height: 30px;
             letter-spacing: -0.4px;
-            color: #0F171B;
+            color: var(--color-text);
           }
           
           h2 {
@@ -42,7 +42,7 @@ function Layout(props) {
             font-size: 19px;
             line-height: 20px;
             letter-spacing: -0.4px;
-            color: #0F171B;
+            color: var(--color-text);
           }
 
           h3 {
@@ -50,7 +50,7 @@ function Layout(props) {
             font-size: 17px;
             line-height: 20px;
             letter-spacing: -0.4px;
-            color: #0F171B;
+            color: var(--color-text);
           }
 
           p {
@@ -59,7 +59,7 @@ function Layout(props) {
             font-weight: 500;
             font-size: 15px;
             line-height: 1.6;
-            color: #0F171B;
+            color: var(--color-text);
             margin-bottom: 30px;
             opacity: 0.8;
           }
@@ -77,7 +77,7 @@ function Layout(props) {
             font-weight: 500;
             font-size: 15px;
             line-height: 1.6;
-            color: #0F171B;
+            color: var(--color-text);
             
             list-style-type: none;
             list-style-position:inside;
@@ -87,7 +87,7 @@ function Layout(props) {
           }
 
           li {
-            color: #0F171B;
+            color: var(--color-text);
           }
           
           .blog-posts li a {
