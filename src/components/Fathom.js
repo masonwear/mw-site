@@ -7,7 +7,7 @@ Router.events.on('routeChangeComplete', () => {
   Fathom.trackPageview();
 });
 
-function App({ Component, pageProps }) {
+function FathomHandler({}) {
   // Initialize Fathom when the app loads
   useEffect(() => {
     Fathom.load( process.env.FATHOM_SITE_ID, {
@@ -15,10 +15,10 @@ function App({ Component, pageProps }) {
     });
   }, []);
 
-  return <Component {...pageProps} />;
+  return null
 }
 
-export default Fathom;
+export default FathomHandler;
 
 
 

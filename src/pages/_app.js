@@ -1,8 +1,9 @@
 import App, { Container } from 'next/app';
 import React from 'react';
 import { DefaultSeo } from 'next-seo';
-import Fathom from '../components/Fathom'
+import FathomHandler from '../components/Fathom'
 import { Helmet } from "react-helmet"
+import  Head  from 'next/head'
 
 export default class MyApp extends App {
   render() {
@@ -11,8 +12,8 @@ export default class MyApp extends App {
        
         
       
-      <Container>
-          
+      <>
+       <FathomHandler/>  
            
         <DefaultSeo
           openGraph={{
@@ -20,6 +21,7 @@ export default class MyApp extends App {
             locale: 'en_US',
             url: 'https://masonwear.co',
             site_name: 'Mason Wear',
+            title: 'Mason Wear',
             images: [
                 {
                     url: 'https://masonwear.co/static/og-image.png',
@@ -37,15 +39,15 @@ export default class MyApp extends App {
          
         <Component {...pageProps} />
       
-        <Helmet>
+        <Head>
           <title>Mason Wear</title>
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet" />
-          </Helmet>
+          </Head>
          
       
-      </Container>
+      </>
      
 
 
