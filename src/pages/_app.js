@@ -1,29 +1,60 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
-import * as Fathom from 'fathom-client'
+import App, { Container } from 'next/app';
+import React from 'react';
+import { DefaultSeo } from 'next-seo';
+import FathomHandler from '../components/Fathom'
+import { Helmet } from "react-helmet"
 
-function FathomHandler({ Component, pageProps }) {
-  const router = useRouter()
 
-  useEffect(() => {
-    // Initialize Fathom when the app loads
-    Fathom.load('LZWKJNEY', {
-      includedDomains: ['masonwear.co']
-    })
 
-    function onRouteChangeComplete() {
-      Fathom.trackPageview()
-    }
-    // Record a pageview when route changes
-    router.events.on('routeChangeComplete', onRouteChangeComplete)
+export default class MyApp extends App {
+  render() {
+    const { Component, pageProps } = this.props;
+    return (
+       
+        
+      
+      <>
+      <FathomHandler/>
+           
+        <DefaultSeo
+          openGraph={{
+            type: 'website',
+            locale: 'en_US',
+            url: 'https://masonwear.co',
+            site_name: 'Mason Wear',
+            title: 'Mason Wear',
+            images: [
+                {
+                    url: 'https://masonwear.co/static/og-image.png',
+                    alt: 'Mason Wear',
+                },
 
-    // Unassign event listener
-    return () => {
-      router.events.off('routeChangeComplete', onRouteChangeComplete)
-    }
-  }, [])
+            ],
+          }}
+          twitter={{
+            handle: '@masondwear',
+            site: '@masondwear',
+            cardType: 'summary_large_image',
+          }}
+        />
+         
+        <Component {...pageProps} />
+      
+        <Helmet>
+          <title>Mason Wear</title>
+          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet" />
+          
+          </Helmet>
+         
+      
+      </>
+     
 
-  return <Component {...pageProps} />
+
+    );
+  }
 }
 
-export default FathomHandler
+

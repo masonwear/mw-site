@@ -7,8 +7,8 @@ function FathomHandler({ Component, pageProps }) {
 
   useEffect(() => {
     // Initialize Fathom when the app loads
-    Fathom.load('LZWKJNEY', {
-      includedDomains: ['masonwear.co']
+    Fathom.load(process.env.FATHOM_SITE_ID, {
+      includedDomains: ['https://masonwear.co/']
     })
 
     function onRouteChangeComplete() {
