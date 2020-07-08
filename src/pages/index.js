@@ -41,7 +41,7 @@ const IndexPage = (props) => (
 
           ))}
           <div className="see-all">
-            <Link href="/posts" className="see-all-link"><a>See All</a></Link> &rarr;
+            <Link href="/posts"><a className="see-all-link">See All</a></Link> &rarr;
 
 
     </div>
