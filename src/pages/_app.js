@@ -10,12 +10,9 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-       
-        
-      
       <>
-      <FathomHandler/>
-           
+        <FathomHandler />
+
         <DefaultSeo
           openGraph={{
             type: 'website',
@@ -24,10 +21,10 @@ export default class MyApp extends App {
             site_name: 'Mason Wear',
             title: 'Mason Wear',
             images: [
-                {
-                    url: 'https://masonwear.co/static/og-image.png',
-                    alt: 'Mason Wear',
-                },
+              {
+                url: 'https://masonwear.co/static/og-image.png',
+                alt: 'Mason Wear',
+              },
 
             ],
           }}
@@ -37,22 +34,16 @@ export default class MyApp extends App {
             cardType: 'summary_large_image',
           }}
         />
-         
+
         <Component {...pageProps} />
-      
+
         <Helmet>
           <title>Mason Wear</title>
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet" />
-          
-          </Helmet>
-         
-      
+        </Helmet>
       </>
-     
-
-
     );
   }
 }
